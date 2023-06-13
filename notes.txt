@@ -1,0 +1,5 @@
+pip install --ignore-installed pymupdf==1.19.0
+
+apt install libgl1-mesa-glx
+
+apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
