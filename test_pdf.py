@@ -4,7 +4,7 @@ from paddleocr import PaddleOCR, draw_ocr
 # You can set the parameter `lang` as `ch`, `en`, `fr`, `german`, `korean`, `japan`
 # to switch the language model in order.
 ocr = PaddleOCR(use_angle_cls=True, lang="en", page_num=2)  # need to run only once to download and load model into memory
-img_path = './resume.pdf'
+img_path = './test_image/resume.pdf'
 result = ocr.ocr(img_path, cls=True)
 for idx in range(len(result)):
     res = result[idx]
@@ -37,4 +37,4 @@ for idx in range(len(result)):
     scores = [line[1][1] for line in res]
     im_show = draw_ocr(image, boxes, txts, scores, font_path='./PaddleOCR/doc/fonts/simfang.ttf')
     im_show = Image.fromarray(im_show)
-    im_show.save('result_page_{}.jpg'.format(idx))
+    im_show.save('test_output/result_page_{}.jpg'.format(idx))
