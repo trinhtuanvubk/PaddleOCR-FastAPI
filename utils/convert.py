@@ -28,3 +28,6 @@ def bytes_to_ndarray(img_bytes: str):
     image_np = np.frombuffer(img_bytes, dtype=np.uint8)
     image_np2 = cv2.imdecode(image_np, cv2.IMREAD_COLOR)
     return image_np2
+
+def bytes_to_np(byte:str):
+    return np.frombuffer(byte, dtype=np.uint8)
