@@ -1,1 +1,1 @@
-# FastAPI + PaddleOCR
+# PaddleOCR + FastAPI
