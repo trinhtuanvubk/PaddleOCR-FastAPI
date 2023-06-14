@@ -1,1 +1,6 @@
 Paddle*/
+*.jpg
+*.png
+*test*
+*trash*
+**/__pycache__
