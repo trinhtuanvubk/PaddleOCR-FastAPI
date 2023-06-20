@@ -1,0 +1,5 @@
+PaddleOCR/
+test_image/
+test_output/
+*test*
+*trash*
